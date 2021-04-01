@@ -1,0 +1,48 @@
+Algoritmo "aplicação de investimento"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Fernando da Silva Maransatto
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Diogo Yusuke Iwamoto
+// Data atual  : 30/03/2021
+Var
+   // Seção de Declarações das variáveis
+   valor: real
+   deposito: real
+   juros: real
+   continua: caractere
+   x: inteiro
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreval("-------------Aplicação de investimento---------------")
+
+   escreva("valor inicial: ")
+   leia(valor)
+
+   escreva("valor depositado: ")
+   leia(deposito)
+
+   escreva("taxa de juros: ")
+   leia(juros)
+   juros:= juros/100
+
+   continua := "s"
+
+   enquanto continua = "s" faca
+
+      para x de 1 ate 12 faca
+
+         valor := valor + (valor*juros) + deposito
+
+         escreval(x, valor:2:2)
+
+      fimpara
+
+      escreval("Deseja simular mais um ano? (s/n)")
+      leia(continua)
+
+
+   fimenquanto
+
+
+Fimalgoritmo
